@@ -101,5 +101,7 @@ def chatbot_response():
     response = get_response(ints, intents)
     return jsonify({'response': response})
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # default ke 5000 jika PORT tidak disetel
+    app.run(host='0.0.0.0', port=port)
+
