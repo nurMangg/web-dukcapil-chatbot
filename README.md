@@ -14,21 +14,21 @@ Ini adalah aplikasi web Flask yang menyediakan informasi tentang layanan akta ke
 1. Klon repositori ini
 2. Instal dependensi yang diperlukan:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 3. Latih model chatbot:
 
-\`\`\`bash
+```bash
 python train_chatbot.py
-\`\`\`
+```
 
 4. Jalankan aplikasi Flask:
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 5. Akses aplikasi di http://127.0.0.1:5000/
 
