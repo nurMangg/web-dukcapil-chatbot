@@ -11,7 +11,12 @@ Ini adalah aplikasi web Flask yang menyediakan informasi tentang layanan akta ke
 
 ## Instalasi
 
-1. Klon repositori ini
+1. Clone repositori ini
+
+```bash
+git clone https://github.com/nurMangg/web-dukcapil-chatbot.git
+```
+
 2. Instal dependensi yang diperlukan:
 
 ```bash
