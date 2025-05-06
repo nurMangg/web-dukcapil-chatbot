@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Akta Kelahiran - Disdukcapil Kabupaten Brebes</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Disdukcapil Brebes">
+                <div class="logo-text">
+                    <h1>DISDUKCAPIL</h1>
+                    <h2>Kabupaten Brebes</h2>
+                </div>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#prosedur">Prosedur</a></li>
+                    <li><a href="#persyaratan">Persyaratan</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Layanan Resmi</span>
+                <h1>Pembuatan Akta Kelahiran</h1>
+                <p>Layanan pembuatan akta kelahiran yang cepat, mudah, dan transparan untuk warga Kabupaten Brebes.</p>
+                <div class="cta-buttons">
+                    <a href="#prosedur" class="btn primary">Cara Mengajukan</a>
+                    <a href="#persyaratan" class="btn secondary">Cek Persyaratan</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">14</span>
+                        <span class="stat-text">Hari Kerja</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-text">Biaya</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-text">Informasi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/hero-image.png') }}" alt="Ilustrasi Akta Kelahiran">
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <i class="fas fa-bullhorn"></i>
+            <p>Penting: Akta Kelahiran adalah hak setiap anak dan <strong>GRATIS</strong>. Laporkan jika ada pungutan biaya!</p>
+            <a href="#kontak" class="banner-link">Hubungi Kami</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="layanan" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Layanan Kami</span>
+                <h2 class="section-title">Layanan Akta Kelahiran</h2>
+                <p class="section-description">Disdukcapil Kabupaten Brebes menyediakan berbagai layanan terkait akta kelahiran untuk memenuhi kebutuhan masyarakat</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Akta Kelahiran Baru</h3>
+                    <p>Penerbitan akta kelahiran untuk bayi baru lahir (0-60 hari) dengan proses cepat.</p>
+                    <a href="#prosedur" class="service-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Akta Kelahiran Terlambat</h3>
+                    <p>Penerbitan akta kelahiran untuk anak yang terlambat pelaporan (lebih dari 60 hari).</p>
+                    <a href="#prosedur" class="service-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Perbaikan Akta</h3>
+                    <p>Layanan perbaikan data pada akta kelahiran yang sudah terbit dengan kesalahan data.</p>
+                    <a href="#prosedur" class="service-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <h3>Salinan Akta</h3>
+                    <p>Penerbitan salinan akta kelahiran untuk pengganti akta yang hilang atau rusak.</p>
+                    <a href="#prosedur" class="service-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Manfaat</span>
+                <h2 class="section-title">Pentingnya Akta Kelahiran</h2>
+                <p class="section-description">Akta kelahiran merupakan dokumen penting yang memberikan berbagai manfaat bagi anak dan keluarga</p>
+            </div>
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Identitas Resmi</h3>
+                        <p>Menjadi bukti sah identitas anak yang diakui secara hukum oleh negara.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Akses Pendidikan</h3>
+                        <p>Diperlukan untuk pendaftaran sekolah dari tingkat dasar hingga perguruan tinggi.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Layanan Kesehatan</h3>
+                        <p>Memudahkan akses terhadap layanan kesehatan dan jaminan sosial.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Pembuatan Dokumen</h3>
+                        <p>Syarat untuk pembuatan KTP, SIM, paspor, dan dokumen penting lainnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="prosedur" class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Prosedur</span>
+                <h2 class="section-title">Cara Mengajukan Akta Kelahiran</h2>
+                <p class="section-description">Ikuti langkah-langkah berikut untuk mengajukan permohonan akta kelahiran di Disdukcapil Kabupaten Brebes</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Siapkan Dokumen</h3>
+                        <p>Siapkan semua dokumen persyaratan yang diperlukan seperti surat keterangan lahir, KTP orang tua, Kartu Keluarga, dan buku nikah (jika ada).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Isi Formulir</h3>
+                        <p>Isi formulir permohonan akta kelahiran yang dapat diunduh dari website atau diambil langsung di kantor Disdukcapil Brebes.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Serahkan Berkas</h3>
+                        <p>Serahkan formulir yang telah diisi beserta dokumen persyaratan ke loket pelayanan Disdukcapil Brebes atau melalui petugas registrasi di kecamatan/desa.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Verifikasi & Proses</h3>
+                        <p>Petugas akan memverifikasi kelengkapan dokumen dan memproses permohonan Anda. Anda akan menerima tanda terima permohonan.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Ambil Akta Kelahiran</h3>
+                        <p>Setelah 14 hari kerja, Anda dapat mengambil akta kelahiran di kantor Disdukcapil Brebes dengan menunjukkan tanda terima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="process-note">
+                <i class="fas fa-info-circle"></i>
+                <p>Untuk kelahiran yang terlambat dilaporkan (lebih dari 60 hari), diperlukan penetapan dari Pengadilan Negeri atau persetujuan Kepala Dinas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="persyaratan" class="requirements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Dokumen</span>
+                <h2 class="section-title">Persyaratan Akta Kelahiran</h2>
+                <p class="section-description">Berikut adalah dokumen-dokumen yang perlu Anda siapkan untuk mengajukan akta kelahiran</p>
+            </div>
+            <div class="requirements-container">
+                <div class="requirements-card">
+                    <h3>Akta Kelahiran Baru (0-60 hari)</h3>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-check-circle"></i> Surat Keterangan Lahir dari dokter/bidan/rumah sakit</li>
+                        <li><i class="fas fa-check-circle"></i> Fotokopi KTP kedua orang tua</li>
+                        <li><i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga</li>
+                        <li><i class="fas fa-check-circle"></i> Fotokopi Buku Nikah/Akta Perkawinan orang tua (jika ada)</li>
+                        <li><i class="fas fa-check-circle"></i> Surat kuasa (jika diwakilkan)</li>
+                        <li><i class="fas fa-check-circle"></i> Formulir permohonan akta kelahiran yang telah diisi</li>
+                    </ul>
+                </div>
+                <div class="requirements-card">
+                    <h3>Akta Kelahiran Terlambat (>60 hari)</h3>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-check-circle"></i> Semua persyaratan akta kelahiran baru</li>
+                        <li><i class="fas fa-check-circle"></i> Surat pernyataan keterlambatan dari pemohon</li>
+                        <li><i class="fas fa-check-circle"></i> Surat pengantar dari desa/kelurahan</li>
+                        <li><i class="fas fa-check-circle"></i> Surat persetujuan dari Kepala Dinas</li>
+                        <li><i class="fas fa-check-circle"></i> Bukti pendukung lainnya (seperti ijazah, kartu keluarga lama, dll)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="download-section">
+                <h3>Unduh Formulir</h3>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Formulir Permohonan</span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Surat Pernyataan</span>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Surat Kuasa</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Basis Section -->
+    <section class="legal-basis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Dasar Hukum</span>
+                <h2 class="section-title">Landasan Hukum</h2>
+                <p class="section-description">Layanan akta kelahiran diselenggarakan berdasarkan peraturan perundang-undangan yang berlaku</p>
+            </div>
+            <div class="legal-basis-container">
+                <div class="legal-item">
+                    <div class="legal-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="legal-content">
+                        <h3>UU No. 24 Tahun 2013</h3>
+                        <p>Tentang Perubahan Atas Undang-Undang Nomor 23 Tahun 2006 Tentang Administrasi Kependudukan</p>
+                    </div>
+                </div>
+                <div class="legal-item">
+                    <div class="legal-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="legal-content">
+                        <h3>PP No. 40 Tahun 2019</h3>
+                        <p>Tentang Pelaksanaan Undang-Undang Nomor 23 Tahun 2006 Tentang Administrasi Kependudukan</p>
+                    </div>
+                </div>
+                <div class="legal-item">
+                    <div class="legal-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="legal-content">
+                        <h3>Permendagri No. 9 Tahun 2016</h3>
+                        <p>Tentang Percepatan Peningkatan Cakupan Kepemilikan Akta Kelahiran</p>
+                    </div>
+                </div>
+                <div class="legal-item">
+                    <div class="legal-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="legal-content">
+                        <h3>Perda Kab. Brebes</h3>
+                        <p>Tentang Penyelenggaraan Administrasi Kependudukan di Kabupaten Brebes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tanya Jawab</span>
+                <h2 class="section-title">Pertanyaan Umum</h2>
+                <p class="section-description">Temukan jawaban atas pertanyaan yang sering diajukan tentang layanan akta kelahiran</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama proses pembuatan akta kelahiran?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proses pembuatan akta kelahiran membutuhkan waktu maksimal 14 hari kerja sejak berkas dinyatakan lengkap dan benar oleh petugas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada biaya untuk pembuatan akta kelahiran?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tidak ada biaya (GRATIS) untuk pembuatan akta kelahiran. Jika ada pihak yang meminta biaya, silakan laporkan ke kanal pengaduan resmi Disdukcapil Brebes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana jika kelahiran sudah lebih dari 1 tahun?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Untuk kelahiran yang dilaporkan lebih dari 1 tahun, diperlukan Surat Pernyataan Keterlambatan Pencatatan Kelahiran yang diketahui oleh Kepala Desa/Lurah dan persetujuan dari Kepala Dinas Kependudukan dan Pencatatan Sipil.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah bisa mengurus akta kelahiran secara online?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, Disdukcapil Kabupaten Brebes telah menyediakan layanan online melalui aplikasi SIMPADU (Sistem Informasi Pelayanan Administrasi Kependudukan) yang dapat diakses melalui website resmi atau aplikasi mobile.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana jika orang tua tidak memiliki buku nikah?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Jika orang tua tidak memiliki buku nikah, akta kelahiran tetap dapat diterbitkan dengan catatan hanya mencantumkan nama ibu. Untuk mencantumkan nama ayah, diperlukan pengakuan ayah biologis dengan persetujuan ibu yang disahkan oleh notaris.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah akta kelahiran bisa diwakilkan pengurusannya?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, pengurusan akta kelahiran dapat diwakilkan dengan melampirkan surat kuasa dan fotokopi KTP pemberi dan penerima kuasa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hubungi Kami</span>
+                <h2 class="section-title">Kontak Disdukcapil Brebes</h2>
+                <p class="section-description">Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau membutuhkan bantuan</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat Kantor</h3>
+                            <p>Jl. A. Yani No. 56, Brebes, Jawa Tengah 52212</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>(0283) 671204</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>disdukcapil@brebeskab.go.id</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Pelayanan</h3>
+                            <p>Senin - Kamis: 08.00 - 15.00 WIB</p>
+                            <p>Jumat: 08.00 - 11.00 WIB</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Media Sosial</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <h3>Lokasi Kami</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0988193024347!2d109.04494231477253!3d-6.872591995033941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9df8dc7d331%3A0x8c4b68a22c53d26b!2sDisdukcapil%20Brebes!5e0!3m2!1sen!2sid!4v1620123456789!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Chatbot">
+                    <h3>Asisten BLAKASUTA</h3>
+                </div>
+                <button id="closeChat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Selamat datang di Asisten Akta Kelahiran Disdukcapil Brebes! 👋</p>
+                        <p>Saya siap membantu Anda dengan informasi seputar pembuatan akta kelahiran. Apa yang ingin Anda tanyakan?</p>
+                    </div>
+                </div>
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Anda dapat bertanya tentang:</p>
+                        <ul class="chat-suggestions">
+                            <li><button class="suggestion-btn">Persyaratan akta kelahiran</button></li>
+                            <li><button class="suggestion-btn">Prosedur pembuatan akta</button></li>
+                            <li><button class="suggestion-btn">Biaya dan waktu pemrosesan</button></li>
+                            <li><button class="suggestion-btn">Lokasi kantor Disdukcapil</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userMessage" placeholder="Ketik pertanyaan Anda di sini...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-button" id="chatButton">
+            <i class="fas fa-comments"></i>
+            <span>Tanya Asisten</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div>
+                        <h3>DISDUKCAPIL</h3>
+                        <h4>Kabupaten Brebes</h4>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#prosedur">Prosedur</a></li>
+                        <li><a href="#persyaratan">Persyaratan</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan Lainnya</h4>
+                    <ul>
+                        <li><a href="#">KTP Elektronik</a></li>
+                        <li><a href="#">Kartu Keluarga</a></li>
+                        <li><a href="#">Akta Perkawinan</a></li>
+                        <li><a href="#">Akta Kematian</a></li>
+                        <li><a href="#">Pindah Datang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dinas Kependudukan dan Pencatatan Sipil Kabupaten Brebes. Hak Cipta Dilindungi.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

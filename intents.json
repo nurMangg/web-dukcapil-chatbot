@@ -1,0 +1,152 @@
+{
+    "intents": [
+      {
+        "tag": "sapaan",
+        "patterns": [
+          "Hai",
+          "Halo",
+          "Selamat pagi",
+          "Selamat siang",
+          "Selamat sore",
+          "Selamat malam",
+          "Siapa disana?",
+          "Hai, apa kabar?"
+        ],
+        "responses": [
+          "Selamat datang di Layanan Sertifikat Kelahiran! Bagaimana saya dapat membantu Anda?",
+          "Hai! Bagaimana saya dapat membantu Anda dengan sertifikat kelahiran hari ini?",
+          "Selamat pagi! Bagaimana saya dapat membantu Anda dengan sertifikat kelahiran?",
+          "Selamat siang! Bagaimana saya dapat membantu Anda dengan sertifikat kelahiran?"
+        ]
+      },
+      {
+        "tag": "ucapan_sampai",
+        "patterns": ["Sampai jumpa", "Selamat tinggal", "Terima kasih", "Sampai nanti", "Selamat pagi", "Selamat siang", "Selamat sore"],
+        "responses": [
+          "Terima kasih atas kunjungan Anda. Semoga hari Anda menyenangkan!",
+          "Terima kasih telah menghubungi kami. Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya!",
+          "Selamat tinggal! Semoga Anda dapat menemukan informasi yang Anda cari.",
+          "Terima kasih telah mengunjungi kami. Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya!"
+        ]
+      },
+      {
+        "tag": "syarat",
+        "patterns": [
+          "Apa syarat untuk sertifikat kelahiran",
+          "Dokumen apa yang dibutuhkan",
+          "Syarat untuk sertifikat kelahiran",
+          "Apa saja yang harus saya siapkan",
+          "Syarat untuk mengajukan sertifikat kelahiran",
+          "Dokumen apa yang harus saya bawa",
+          "Syarat untuk mendapatkan sertifikat kelahiran"
+        ],
+        "responses": [
+          "Untuk mengajukan sertifikat kelahiran, Anda memerlukan dokumen-dokumen berikut: 1) Surat keterangan lahir dari rumah sakit, 2) KTP orang tua, 3) Surat nikah (jika orang tua sudah menikah), 4) Formulir pengajuan.",
+          "Syarat untuk sertifikat kelahiran adalah: surat keterangan lahir dari rumah sakit, KTP orang tua, surat nikah (jika orang tua sudah menikah), dan formulir pengajuan.",
+          "Anda perlu menyiapkan: surat keterangan lahir dari rumah sakit, KTP orang tua, surat nikah (jika orang tua sudah menikah), dan formulir pengajuan."
+        ]
+      },
+      {
+        "tag": "proses",
+        "patterns": [
+          "Bagaimana cara mengajukan sertifikat kelahiran",
+          "Proses pengajuan",
+          "Bagaimana cara mendapatkan sertifikat kelahiran",
+          "Proses pengajuan sertifikat kelahiran",
+          "Bagaimana cara mengajukan",
+          "Proses pengajuan sertifikat",
+          "Bagaimana cara mengajukan sertifikat"
+        ],
+        "responses": [
+          "Proses pengajuan sertifikat kelahiran adalah: 1) Mengisi formulir pengajuan, 2) Menyerahkan dokumen-dokumen yang dibutuhkan, 3) Membayar biaya pengajuan, 4) Menunggu sertifikat selesai diproses dalam waktu 7 hari kerja.",
+          "Anda perlu mengisi formulir pengajuan, menyerahkan dokumen-dokumen yang dibutuhkan, membayar biaya pengajuan, dan menunggu sertifikat selesai diproses dalam waktu 7 hari kerja.",
+          "Proses pengajuan sertifikat kelahiran adalah: mengisi formulir pengajuan, menyerahkan dokumen-dokumen yang dibutuhkan, membayar biaya pengajuan, dan menunggu sertifikat selesai diproses dalam waktu 7 hari kerja."
+        ]
+      },
+      {
+        "tag": "biaya",
+        "patterns": [
+          "Berapa biaya untuk sertifikat kelahiran",
+          "Biaya sertifikat kelahiran",
+          "Biaya untuk mengajukan sertifikat kelahiran",
+          "Biaya pengajuan sertifikat kelahiran",
+          "Berapa biaya yang harus saya bayar",
+          "Berapa biaya untuk sertifikat",
+          "Biaya untuk sertifikat"
+        ],
+        "responses": [
+          "Biaya untuk sertifikat kelahiran adalah Rp 25.000 untuk proses reguler (7 hari kerja) dan Rp 50.000 untuk proses express (3 hari kerja).",
+          "Biaya untuk sertifikat kelahiran adalah Rp 25.000 untuk proses reguler dan Rp 50.000 untuk proses express.",
+          "Anda perlu membayar biaya Rp 25.000 untuk proses reguler dan Rp 50.000 untuk proses express."
+        ]
+      },
+      {
+        "tag": "lokasi",
+        "patterns": [
+          "Di mana saya dapat mengajukan sertifikat kelahiran",
+          "Alamat kantor",
+          "Di mana saya dapat mengajukan",
+          "Kantor pengajuan",
+          "Di mana saya dapat menemukan informasi",
+          "Alamat kantor pengajuan",
+          "Di mana saya dapat mengajukan sertifikat"
+        ],
+        "responses": [
+          "Anda dapat mengajukan sertifikat kelahiran di kantor Dinas Kependudukan dan Catatan Sipil (Disdukcapil) terdekat atau di kantor kami di Jalan Jenderal Sudirman No. 1.",
+          "Kantor kami terletak di Jalan Jenderal Sudirman No. 1. Anda dapat mengajukan sertifikat kelahiran di sana.",
+          "Anda dapat mengajukan sertifikat kelahiran di kantor Disdukcapil terdekat atau di kantor kami di Jalan Jenderal Sudirman No. 1."
+        ]
+      },
+      {
+        "tag": "online",
+        "patterns": [
+          "Apakah saya dapat mengajukan sertifikat kelahiran online",
+          "Pengajuan online",
+          "Dapatkah saya mengajukan sertifikat kelahiran dari rumah",
+          "Apakah saya dapat mengajukan sertifikat kelahiran melalui internet",
+          "Dapatkah saya mengajukan sertifikat kelahiran secara online",
+          "Pengajuan sertifikat kelahiran online",
+          "Dapatkah saya mengajukan sertifikat kelahiran dari internet"
+        ],
+        "responses": [
+          "Ya, Anda dapat mengajukan sertifikat kelahiran secara online melalui website kami. Anda perlu mengunggah dokumen-dokumen yang dibutuhkan dan membayar biaya pengajuan.",
+          "Anda dapat mengajukan sertifikat kelahiran secara online melalui website kami. Anda perlu mengunggah dokumen-dokumen yang dibutuhkan dan membayar biaya pengajuan.",
+          "Ya, kami menyediakan layanan pengajuan sertifikat kelahiran secara online. Anda dapat mengunggah dokumen-dokumen yang dibutuhkan dan membayar biaya pengajuan melalui website kami."
+        ]
+      },
+      {
+        "tag": "waktu",
+        "patterns": [
+          "Berapa lama waktu yang dibutuhkan untuk mengajukan sertifikat kelahiran",
+          "Waktu pengajuan",
+          "Berapa lama waktu yang dibutuhkan untuk mendapatkan sertifikat kelahiran",
+          "Waktu pengajuan sertifikat kelahiran",
+          "Berapa lama waktu yang dibutuhkan untuk mengajukan",
+          "Waktu pengajuan sertifikat",
+          "Berapa lama waktu yang dibutuhkan untuk mengajukan sertifikat"
+        ],
+        "responses": [
+          "Waktu pengajuan sertifikat kelahiran adalah 7 hari kerja untuk proses reguler dan 3 hari kerja untuk proses express.",
+          "Anda akan menerima sertifikat kelahiran dalam waktu 7 hari kerja untuk proses reguler dan 3 hari kerja untuk proses express.",
+          "Waktu pengajuan sertifikat kelahiran adalah 7 hari kerja untuk proses reguler dan 3 hari kerja untuk proses express."
+        ]
+      },
+      {
+        "tag": "koreksi",
+        "patterns": [
+          "Bagaimana cara mengoreksi informasi pada sertifikat kelahiran",
+          "Koreksi informasi",
+          "Bagaimana cara mengubah informasi pada sertifikat kelahiran",
+          "Koreksi informasi pada sertifikat kelahiran",
+          "Bagaimana cara mengoreksi",
+          "Koreksi informasi pada sertifikat",
+          "Bagaimana cara mengubah informasi pada sertifikat"
+        ],
+        "responses": [
+          "Untuk mengoreksi informasi pada sertifikat kelahiran, Anda dapat menghubungi kantor kami di Jalan Jenderal Sudirman No. 1.",
+          "Anda dapat menghubungi kantor kami di Jalan Jenderal Sudirman No. 1 untuk mengoreksi informasi pada sertifikat kelahiran.",
+          "Untuk mengoreksi informasi pada sertifikat kelahiran, Anda dapat menghubungi kantor kami di Jalan Jenderal Sudirman No. 1."
+        ]
+      }
+    ]
+  }
