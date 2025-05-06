@@ -98,6 +98,7 @@ def home():
 def chatbot_response():
     message = request.json['message']
     ints = predict_class(message)
+    print(ints)
     response = get_response(ints, intents)
     return jsonify({'response': response})
 
