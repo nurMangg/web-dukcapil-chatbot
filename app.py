@@ -5,8 +5,12 @@ import random
 import nltk
 from nltk.stem import WordNetLemmatizer
 import os
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/chatbot_disdukcapil'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
 # Download necessary NLTK data
 nltk.download('punkt')
@@ -32,6 +36,20 @@ except (FileNotFoundError, IOError) as e:
     except (FileNotFoundError, IOError):
         intents = {"intents": []}
     model_loaded = False
+    
+class ChatLog(db.Model):
+       id = db.Column(db.Integer, primary_key=True)
+       user_message = db.Column(db.String(500))
+       bot_response = db.Column(db.String(500))
+       intent = db.Column(db.String(100))
+       probability = db.Column(db.Float)
+       timestamp = db.Column(db.DateTime, default=db.func.current_timestamp())
+       def __repr__(self):
+           return f'<ChatLog {self.user_message}>'
+       
+def create_tables():
+    with app.app_context():
+        db.create_all() 
 
 def predict_class(sentence):
     if not model_loaded:
@@ -98,11 +116,20 @@ def home():
 def chatbot_response():
     message = request.json['message']
     ints = predict_class(message)
-    print(ints)
     response = get_response(ints, intents)
+    # Simpan ke database
+    chat_log = ChatLog(
+        user_message=message,
+        bot_response=response,
+        intent=ints[0]['intent'] if ints else 'unknown',
+        probability=float(ints[0]['probability']) if ints else 0.0
+    )
+    db.session.add(chat_log)
+    db.session.commit()
     return jsonify({'response': response})
 
 if __name__ == '__main__':
+    create_tables()
     port = int(os.environ.get('PORT', 5000))  # default ke 5000 jika PORT tidak disetel
     app.run(host='0.0.0.0', port=port)
 

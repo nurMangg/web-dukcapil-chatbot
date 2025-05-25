@@ -3,3 +3,5 @@ numpy
 nltk
 scikit-learn
 setuptools
+Flask-SQLAlchemy
+PyMySQL
